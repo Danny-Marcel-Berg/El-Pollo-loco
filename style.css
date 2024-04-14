@@ -1,0 +1,295 @@
+@font-face {
+    font-family: 'zabras';
+    src: url('fonts/zabars.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.background-image {
+    background-repeat: 0;
+    background-size: cover;
+}
+
+.width-height-100 {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.border-radius-20 {
+    border-radius: 20px;
+}
+
+.section {
+    background-image: url('img/10_extras/backgroundImg.jpg');
+    height: 100vh;
+    font-family: 'zabras', Arial, Helvetica, sans-serif;
+}
+
+.fullscreen-mode {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw; 
+    max-height: 100vh;
+    aspect-ratio: 420/720;
+    object-fit: contain;
+}
+
+h1 {
+    font-size: 84px !important;
+    letter-spacing: 5px;
+    text-shadow: 2px 6px 8px rgba(0, 0, 0, 0.2);
+    margin-block-end: 0;
+    text-align: center;
+}
+
+canvas {
+    background-color: black;
+    margin-bottom: 100px;
+    border-radius: 20px;
+}
+
+
+#content {
+    height: 420px;
+    width: 720px;
+    text-align: center;  
+}
+
+
+.start {
+    background-image: url('img/9_intro_outro_screens/start/startscreen_1.png');
+}
+
+
+.gameOverWin {
+    background-image: url('img/9_intro_outro_screens/game_over/game over!.png');
+}
+
+.gameOverLose {
+    background-image: url('img/9_intro_outro_screens/game_over/oh no you lost!.png');
+}
+
+button {
+    border-radius: 14px !important;
+    width: 146px;
+    height: 55px;
+    margin-top: 30px !important;
+    font-size: 45px !important;
+    font-family: 'zabras', Arial, Helvetica, sans-serif;
+    background-color: #ffb900;
+    padding-top: 6px;
+}
+
+button:hover {
+    scale: 1.1;
+}
+
+.miniBtns {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    gap: 8px;
+}
+
+.miniBtns img {
+    width: 30px;
+    height: 30px;
+}
+
+.miniBtns img:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.loading, .help, .rotateDevice {
+    width: 100%;
+    height: 100%;
+    background-color: #efe07c;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #efe07c 19px ), repeating-linear-gradient( #f1a80a, #f4a481 );
+    font-size: 84px;
+}
+
+.help {
+    top: 0px;
+    font-size: 64px;
+    z-index: 1;
+}
+
+.gapHelp {
+    gap: 62px;
+    margin-top: 20px;
+}
+
+.margin-top {
+    margin-top: 50px
+}
+
+.loading p{
+    margin: 0;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 10px solid rgb(53, 53, 53);
+    border-color: rgb(53, 53, 53) transparent rgb(53, 53, 53) transparent;
+    animation: lds-dual-ring 1.5s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.closeImg {
+    height: 50px;
+    width: 50px;
+    right: 15px;
+    top: 15px;
+}
+
+.closeImg:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.actionImg, .spaceImg {
+    height: 150px;
+    width: 150px;
+}
+
+.keysImgBox {
+    margin: 50px 0px 0px 50px;
+}
+
+.pepe {
+    width: 180px;
+    height: 310px;
+}
+
+.nextBtn {
+    right: 50px;
+    bottom: 20px;
+}
+
+.backBtn {
+    left: 50px;
+    bottom: 20px;
+}
+
+
+.bottle {
+    width: 90px;
+    height: 90px;
+    margin-top: 50px;
+    margin-left: -20px;
+}
+
+.finalBoss {
+    margin-top: 40px;
+    width: 180px;
+    height: 310px;
+}
+
+.negative-margin-top {
+    margin-top: -10px;
+}
+
+
+.mobile-btns {
+    width: 60px;
+    height: 60px;
+}
+  
+.mobile-container {
+    bottom: 10px;
+}
+
+#leftMobile-container {
+    bottom: 10px;
+    left: 30px;
+    gap: 16px;
+    display: none;
+}
+
+#rightMobile-container{
+    bottom: 10px;
+    right: 30px;
+    gap: 16px;
+    display: none;
+}
+
+
+#right_button {
+    rotate: 180deg;
+}
+
+#jump_button {
+    rotate: 90deg;
+}
+
+#throw_button {
+    border: 5px solid black;
+    border-radius: 50%;
+    background-color: #efe07c;
+}
+
+.rotateDevice {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    #leftMobile-container, 
+    #rightMobile-container {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    #content {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    
+    .rotateDevice {
+        top: 0;
+        left: 0;
+        display: flex;
+    }   
+}
+
+@media only screen and (max-height: 530px) {
+    h1 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    h1 {
+        display: none;
+    }
+}
+
+@media only screen and (max-height: 420px) {
+    #content {
+        height: 100vh;
+    }
+}
